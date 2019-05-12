@@ -1,0 +1,32 @@
+{
+  "name": "traderbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.31.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.13.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "start-dev": "webpack --config development.webpack.config.js && webpack-dev-server --config development.webpack.config.js",
+    "build-dev": "webpack --config development.webpack.config.js",
+    "build-prod": "webpack production.webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Usama Kamran",
+  "license": "ISC"
+}
