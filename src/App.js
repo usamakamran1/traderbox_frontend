@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import StaticPagesRoutes from "routes/StaticPagesRoutes";
 
 class App extends Component {
   render() {
     return (
-      <h1>Welcome to Trader Box</h1>
+      <Router>
+        <StaticPagesRoutes />
+      </Router>
     );
   }
 }
